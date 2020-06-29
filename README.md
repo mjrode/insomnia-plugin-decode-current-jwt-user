@@ -6,47 +6,50 @@ This is a plugin for the [Insomnia REST client](https://insomnia.rest/) to decod
 ## Decoding Usage
 1. Add the JWT that you want to decode as an environment variable.
    * You can dynamically set these using the `Response -> Body Attribute` [template](https://support.insomnia.rest/article/40-template-tags).
-2. Select 
+2. Select the `Decode JWT` template
+3. Select the JWT you want to decode the the attributes you want returned
+4. Leaving the attribute field blank will return the entire decoded JWT
 
 
+## Example
 
  Set JWT tokens as environment variables
 ---
 
-![](examples/setJwtToken.png)
+![](src/examples/setJwtToken.png)
 
-User the decode JWT user template tag by pressing CTRL+Space.
+Use the decode JWT token template by pressing CTRL+Space.
 ---
 
-![](examples/requestWithTemplateTags.png)
+![](src/examples/requestWithTemplateTags.png)
 
 Change the input type for the `Token` variable to `Environment Variable`
 ---
 
-![](examples/envInputType.png)
+![](src/examples/envInputType.png)
 
 Select the JWT token you want to use
 ---
 
-![](examples/jwtTokens.png)
+![](src/examples/jwtTokens.png)
 
 
 Enter the name of the attribute you want returned
 ---
 
-![](examples/selectAttr.png)
+![](src/examples/selectAttr.png)
 
 
 Or select the checkbox to return the user id
 ---
 
-![](examples/returnId.png)
+![](src/examples/returnId.png)
 
 
 Now you can reference this value anywhere you are able to use template tags
 ---
 
-![](examples/finalReq.png)
+![](src/examples/finalReq.png)
 
 # License
 
