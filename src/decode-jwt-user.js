@@ -12,8 +12,9 @@ module.exports = {
       type: 'string',
       defaultValue: '{{bearer}}'
     },
+
     {
-      displayName: 'Return person_id',
+      displayName: 'Parse and return person_id',
       type: 'boolean',
       help: 'Parse and return the users uuid.',
       defaultValue: false,
@@ -21,12 +22,11 @@ module.exports = {
   ],
 
   async run(context, jwt, personId) {
-    console.log('Context', context.util)
     console.log('personId', personId)
     const decodedJwt = jwtDecode(jwt);
-
+    const keys = await context.store.setItem('jwtKeys')
+    console.log('Keys from store', keys)
     const userProfile = decodedJwt[Object.keys(decodedJwt)[0]]
-
     console.log('User Profile', userProfile)
     if (personId === 'true') {
       console.log('Returning person ID')
