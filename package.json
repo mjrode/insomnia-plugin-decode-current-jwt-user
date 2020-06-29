@@ -8,7 +8,7 @@
     "description": ""
   },
   "publisher": {
-    "name": "Michael Rode",
+    "name": "Michael Rode"
   },
   "main": "index.js",
   "dependencies": {
