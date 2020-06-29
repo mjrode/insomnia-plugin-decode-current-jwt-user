@@ -2,7 +2,7 @@
   "name": "insomnia-plugin-decode-current-jwt-user",
   "displayName": "Decode current JWT token",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An Insomnia plugin that will decode your current JWT token and allow you to reference it in your request.",
   "repository": {
     "type": "git",
