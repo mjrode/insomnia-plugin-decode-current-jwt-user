@@ -7,9 +7,9 @@ function hideAttrName(args) {
 }
 
 module.exports = {
-  name: 'decode',
-  displayName: 'Decode JWT User',
-  description: 'Decode JWT bearer token and reference values',
+  name: 'JwtDecode',
+  displayName: 'Decode JWT Token',
+  description: 'Decode JWT token and reference values',
   args: [
     {
       displayName: 'Token',

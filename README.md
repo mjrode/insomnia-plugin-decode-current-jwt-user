@@ -4,9 +4,9 @@ This is a plugin for the [Insomnia REST client](https://insomnia.rest/) to decod
 
 
 ## Decoding Usage
-Add any JWT's that you want to decode as environment variables.
-
-You can dynamically set these using the `Response -> Body Attribute` [template](https://support.insomnia.rest/article/40-template-tags).
+1. Add the JWT that you want to decode as an environment variable.
+   * You can dynamically set these using the `Response -> Body Attribute` [template](https://support.insomnia.rest/article/40-template-tags).
+2. Select 
 
 
 
@@ -31,11 +31,22 @@ Select the JWT token you want to use
 ![](examples/jwtTokens.png)
 
 
-Change the input type for the `Token` variable to `Environment Variable`
+Enter the name of the attribute you want returned
 ---
 
-![](examples/envInputType.png)
+![](examples/selectAttr.png)
 
+
+Or select the checkbox to return the user id
+---
+
+![](examples/returnId.png)
+
+
+Now you can reference this value anywhere you are able to use template tags
+---
+
+![](examples/finalReq.png)
 
 # License
 
