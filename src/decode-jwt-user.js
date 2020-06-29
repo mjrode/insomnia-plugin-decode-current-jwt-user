@@ -22,18 +22,14 @@ module.exports = {
   ],
 
   async run(context, jwt, personId) {
-    console.log('personId', personId)
     const decodedJwt = jwtDecode(jwt);
-    const keys = await context.store.setItem('jwtKeys')
-    console.log('Keys from store', keys)
     const userProfile = decodedJwt[Object.keys(decodedJwt)[0]]
-    console.log('User Profile', userProfile)
+
     if (personId === 'true') {
-      console.log('Returning person ID')
       return userProfile.person_id
     }
-    return JSON.stringify(userProfile, null, 1)
 
+    return JSON.stringify(userProfile, null, 1)
   },
 };
 

@@ -1,10 +1,14 @@
 {
   "name": "insomnia-plugin-decode-current-jwt-user",
+  "displayName": "Decode current JWT token",
   "version": "0.0.1",
   "private": true,
   "insomnia": {
-    "name": "decode-current-jwt-user",
+    "name": "Decode current JWT token",
     "description": ""
+  },
+  "publisher": {
+    "name": "Michael Rode",
   },
   "main": "index.js",
   "dependencies": {
